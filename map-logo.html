@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css" />
+  <!-- Bootstrap for drop down -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="telangana-map.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""></script>
+    <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+    <script
+      src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .row {
+    display: flex;
+    align-items: center;
+}
+
+.row img {
+    max-width: 340px; /* Adjust the size of the image as needed */
+    height: auto;
+    margin-right: 10px; /* Adds space between the image and paragraph */
+}
+.img-size{
+    min-width: 400px;
+}
+</style>
+<body>
+    <div id="mapid"></div>
+    <div class="col">
+        <div class="row">
+            <div class="col img-size"><img src="./data/images/02_TG Map with Logos 3.png"></div>
+            <div class="col img-size"><img src="./data/images/Vector (7).png"></div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col img-size"> <img src="./data/images/02_TG Map with Logos 3 (1).png"></div>
+            <div class="col"><img src="./data/images/Vector (7).png"></div>
+            <div class="col"> <p>Dairy cluster at Wargal, Siddipet</p></div> 
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col img-size"> <img src="./data/images/02_TG Map with Logos 3 (2).png"></div>
+            <div class="col"><img src="./data/images/Vector (7).png"></div>
+            <div class="col"><p>One of India’s largest Hinterland Edible Oil Refineries</p></div>
+           
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-auto img-size">
+                <img src="./data/images/02_TG Map with Logos 4.png" alt="Factory Image" style="max-width: 100px; height: auto;">
+            </div>
+            <div class="col"><img src="./data/images/Vector (7).png"></div>
+            <div class="col">
+                <p>One of the largest factories of Aashirvaad, Sunfeast & other food brands from ITC</p>
+            </div>
+        </div>
+        
+    </div>
+    
+  <script src="telangana-map.js"></script>
+</body>
+</html>
