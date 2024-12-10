@@ -51,9 +51,9 @@ $(document).ready(function () {
     function style(feature) {
       return {
         fillColor: DEFAULT_MAP_SEGMENT_COLOR,
-        weight: 4,
+        weight: 2,
         opacity: 1,
-        color: "#00000022",
+        color: "#FFFFFF",
         dashArray: "3",
         fillOpacity: 1,
       };
