@@ -67,6 +67,7 @@ $(document).ready(function () {
         color: "#FFFFFF",
         dashArray: "3",
         fillOpacity: 1,
+        className: "geojson-shadow",
       };
     }
     $.getJSON("./data/Telangana.geojson", function (geojson) {

@@ -1,87 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-      crossorigin=""
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css"
-    />
-    <!-- Bootstrap for drop down -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="telangana-map.css" />
-    <script
-      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-      crossorigin=""
-    ></script>
-    <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
-    <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  </head>
-  <style>
-    #mapid {
-      max-width: 400px;
-      max-width: 400px;
-    }
-    .img-size {
-      width: 60px;
-    }
-    .thrid_bracket {
-      border-right: 4px #074C39 solid;
-      margin-top: 1rem;
-      padding-block: .5rem;
-      padding-inline-end: 2rem;
-      position: relative;
-    }
 
-    .thrid_bracket::after {
-      content: "";
-      background-color: #074C39;
-      height: 4px;
-      width: 20px;
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css" />
+  <!-- Bootstrap for drop down -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="telangana-map.css" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+  <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+  <script
+    src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+  #mapid {
+    max-width: 400px;
+    max-width: 400px;
+  }
 
-    }
+  .img-size {
+    width: 60px;
+  }
 
-    .thrid_bracket::before {
-      content: "";
-      background-color: #074C39;
-      height: 4px;
-      width: 20px;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-    }
+  .thrid_bracket {
+    border-right: 4px #074C39 solid;
+    margin-top: 1rem;
+    padding-block: .5rem;
+    padding-inline-end: 2rem;
+    position: relative;
+  }
 
-  </style>
-  <body>
-    <div
-      class="row align-items-start justify-content-center"
-      style="max-width: 100%"
-    >
-      <div class="col-md-4">
-        <div id="mapid"></div>
-      </div>
-      <div class="col-md-7" id="rows_container">
+  .thrid_bracket::after {
+    content: "";
+    background-color: #074C39;
+    height: 4px;
+    width: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+  }
+
+  .thrid_bracket::before {
+    content: "";
+    background-color: #074C39;
+    height: 4px;
+    width: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .geojson-shadow {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+    /* Shadow for the geojson layer */
+  }
+</style>
+
+<body>
+  <div class="row align-items-start justify-content-center" style="max-width: 100%">
+    <div class="col-md-4">
+      <div id="mapid"></div>
+    </div>
+    <div class="col-md-7" id="rows_container">
       <!--   <div class="row align-items-center"> -->
       <!--     <div class="col-md-4"> -->
       <!--       <img -->
@@ -136,5 +128,6 @@
     </div>
 
     <script src="telangana-map.js"></script>
-  </body>
+</body>
+
 </html>
