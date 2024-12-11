@@ -1,0 +1,1036 @@
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>TGIIC</title>
+
+</head>
+<body>
+	
+
+
+
+
+
+
+<html lang="en">
+
+<head>
+<base href="https://www.tgiic.telangana.gov.in:443/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TGIIC">
+<meta name="keywords" content="TGIIC">
+<link rel="shortcut icon"
+	href="https://www.tgiic.telangana.gov.in:443/static/website1/img/favicon.png" type="image/x-icon">
+<title>TGIIC</title>
+<link href="https://www.tgiic.telangana.gov.in:443/static/website1/main.css" rel="stylesheet">
+<script src="https://www.tgiic.telangana.gov.in:443/static/website1/md5.js" type="text/javascript"></script>
+<link href="https://www.tgiic.telangana.gov.in:443/static/website1/custom.css" rel="stylesheet"
+	id="theme-stylesheet">
+<link rel="stylesheet"
+	href="https://www.tgiic.telangana.gov.in:443/static/website1/css/font-awesome.min.css">
+<link href="https://www.tgiic.telangana.gov.in:443/static/website1/menu/sm-core-css.css"
+	rel="stylesheet">
+<link href="https://www.tgiic.telangana.gov.in:443/static/website1/menu/sm-blue.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="https://www.tgiic.telangana.gov.in:443/static/website1/breakingnews/breaking-news-ticker.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap"
+	rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript">
+    function swapStyleSheet(sheet){
+ 
+      document.getElementById('theme-stylesheet').setAttribute('href', sheet);
+
+    }
+    function currentYear() {
+    	  var d = new Date();
+    	  var year = d.getFullYear();
+    	  document.getElementById("curYear").innerHTML = year+" &copy; Government of Telangana, All rights reserved.";   
+    	}
+    	var loginMVCPasswordSaltVal = "";
+    	</script>
+<script type="text/javascript">
+    	      function swapStyleSheet(sheet){
+    	   
+    	        document.getElementById('theme-stylesheet').setAttribute('href', sheet);
+    	  
+    	      }
+    	   
+    	    </script>
+<script type="text/javascript">
+    	    	function capchaImg1(){
+    	    		var obj=Math.random().toString(10).substr(2);
+    	    		var iNumber=obj.substring(0,5);
+    	    			
+    	    		/* 	$("#divGenerateRandomValues1").css({ "background-image": 'url(static/images/captcha2.jpg)', 'width': '130px', 'height': '39px' }); */  
+    	                $("#divGenerateRandomValues1").html("<input id='txtNewInput1' autocomplete='off' ></input>");  
+    	                $("#txtNewInput1").css({ 'background': 'transparent', 'font-family': 'italic', 'font-style': 'bold', 'font-size': '30px' });  
+    	                $("#txtNewInput1").css({ 'width': '100px', 'border': 'none', 'color': 'black', 'text-align': 'center'});  
+    	                $("#txtNewInput1").val(iNumber);
+    	               //hidden val setting for capcha
+    	                $("#hidCapcha1").val(iNumber);
+    	                
+    	                $("#txtNewInput1").prop('disabled', true);  
+    	    	}
+    	    	
+    	    	function getMVCRandomSalt()
+    	    	{
+    	    		//var val = $("#"+id).val();
+    	    		$.post("https://www.tgiic.telangana.gov.in:443/loginMVCPasswordSalt?random="+0.5092996990112512
+	, function(result) {
+			if (result != "") {
+				//alert("Login MVC Password Salt :"+result);
+				loginMVCPasswordSaltVal = result;
+				//$("#aadhar_number").val(null);
+			}
+		});
+		//Wait for 5Sec
+		var delayInMilliseconds = 2000; //1 second
+
+		setTimeout(function() {
+			//Do Nothing after delay sec
+		}, delayInMilliseconds);
+	}
+
+	function display() {
+		var regAlphaNum = /^[-A-Za-z0-9_.@\s]*$/;
+
+		if ($("#username").val() == "") {
+			alert("Please Enter UserID");
+			$("#username").focus();
+			return false;
+		}
+		/* if(!($("#username").val().match(regAlphaNum)))
+		{
+			alert("UserID accepts only Alpha Numerics");
+			$("#username").focus();
+			return false;
+		} */
+		if ($("#origSecurityCode").val() == "") {
+			alert("Please Enter Password");
+			$("#origSecurityCode").focus();
+			return false;
+		}
+
+		if ($("#txtCapcha1").val() == undefined || $("#txtCapcha1").val() == "") {
+			alert("Please Enter Captcha");
+			$("#txtCapcha1").focus();
+			return false;
+		}
+		if ($("#hidCapcha1").val() != $("#txtCapcha1").val()) {
+			alert("Wrong Captcha");
+			$("#txtCapcha1").val("");
+			return false;
+		}
+		//$("#username").val(hex_md5($("#username").val()));
+		//$("#origSecurityCode").val("$9$"+hex_md5($("#origSecurityCode").val())+"");
+		
+		$("#origSecurityCode").val(hex_md5($("#origSecurityCode").val()));
+		$("#origSecurityCode").val(
+				"$9$" + hex_md5($("#origSecurityCode").val())
+						+ loginMVCPasswordSaltVal);
+		//$('#loginForm').submit();
+		return true;
+	}
+</script>
+ 
+
+ <style type="text/css">
+iframe {
+  display:none !important;
+}
+
+
+.skiptranslate {
+  display:none !important;
+}
+    .translated-ltr {
+      margin-top:-40px;
+    }
+    #printable {
+      display: none;
+    }
+
+
+    @media print {
+      body {
+
+
+        visibility: hidden;
+      }
+
+
+      #non-printable {
+        display: none;
+      }
+
+
+      #printable {
+        display: block;
+      }
+
+
+    }
+
+
+
+
+    
+    .goog-te-banner-frame {
+
+
+height:0px !important;
+}
+  </style>
+<style type="text/css">
+.translated-ltr {
+	margin-top: -40px;
+}
+/* 
+#printable {
+	display: none;
+}
+
+@media print {
+	body {
+		visibility: hidden;
+	}
+	#non-printable {
+		display: none;
+	}
+	#printable {
+		display: block;
+	}
+} */
+
+.goog-te-banner-frame {
+	height: 0px !important;
+}
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+@media (max-width: 576px) {
+
+.sticky {
+    position: relative !important;
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+}
+</style>
+</head>
+
+
+<body onload="capchaImg1();">
+
+	<div id="google_translate_element" style="display: none"></div>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+				pageLanguage : 'en',
+				autoDisplay : false
+			}, 'google_translate_element'); //remove the layout
+		}
+	</script>
+
+	<section class="intro">
+		<header class="sticky">
+			<div class="top-bar" style="height:45px;">
+				<div class="container-fluid">
+					<div class="row no-gutters">
+						<div class="col-md-4 col-12 d-flex center translation-links">
+							<div class="social-icons d-flex align-items-center ">
+								<a href="#"><i class="fa fa-facebook "></i> </a> <a href="#"><i
+									class="fa fa-twitter "></i> </a> <a href="#"><i
+									class="fa fa-youtube "></i> </a> <a href="#"><i
+									class="fa fa-linkedin "></i> </a>
+							</div>
+							<a href="javascript:;" class="telugu language" data-lang="Telugu"
+								id="Telugu"><span>Telugu </span></a> <a href="javascript:;"
+								class="hindi language" data-lang="Hindi" id="Hindi"><span>Hindi</span></a>
+							<a href="javascript:;" class="English language" data-lang="En"
+								id="English"><span>ENGLISH </span></a>
+						</div>
+						<div class="col-md-8 text-right col-12">
+							<div class="d-flex justify-content-end align-items-right  ">
+								<button style="height: 33px;"
+									onclick="window.location.href='static/website1/disabled.html'">
+									<i class="fa fa-wheelchair"></i>
+								</button>
+								<button style="height: 33px;" id="btn-decrease">A-</button>
+								<button style="height: 33px;" id="btn-orig">A</button>
+								<button style="height: 33px;" id="btn-increase">A+</button>
+								<button style="height: 33px;" onclick="swapStyleSheet('static/website1/dark.css')"
+									style="background: #000; border-color: none; color: #fff">
+									A&nbsp;</button>
+								<button style="height: 33px;" onclick="swapStyleSheet('static/website1/custom.css')"
+									style="background: #096394; border-color: none; color: #fff">
+									A&nbsp;</button>
+									<form id="loginMVCPasswordSalt" action="./loginMVCPasswordSalt" method="post">
+									<input type="hidden" name="_csrf" value="c674f941-8cb8-40f4-94eb-641b6b5ed867" />
+								<span style="color: red;"><a href="#" data-toggle="modal"
+									data-target="#login" class="btn btn-primary text-white"
+									style="background-color: red; border-color: red; width: 100%;"
+									onclick="getMVCRandomSalt()">Login</a></span>
+									<div>
+<input type="hidden" name="_csrf" value="c674f941-8cb8-40f4-94eb-641b6b5ed867" />
+</div></form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row no-gutters align-items-center ">
+					<div class="col-md-4">
+						<div class="logo">
+							<div class="logo-img">
+								<img style="height: 100px;" 
+									src="https://www.tgiic.telangana.gov.in:443/static/images/tgiicheader_with_text.png"
+									alt="tsiic logo" class=" ">
+									
+									
+							</div>
+							 </div>
+					</div>
+					 <div class="col-md-1 ">
+					 <div class="logo">
+					
+					 </div>
+					 </div>
+					  <div class="col-md-3">
+					  
+					 </div>
+					<div class="col-md-4 ">
+						<div class="header_logos">
+								<img
+								src="https://www.tgiic.telangana.gov.in:443/static/website1/img/rising_telangana.jpeg"
+								style="width: 140px; height: 120px;" alt="Rising Telangana"/>  
+	
+														<a target="_blank" href="https://invest.telangana.gov.in/"><img
+								src="https://www.tgiic.telangana.gov.in:443/static/website1/img/investTelangana.png"
+								style="width: 140px; height: 120px;" alt="Invest Telangana"/></a> 		
+	
+	
+								  
+									
+									 <img
+								style="width: 200px; height: 120px;"
+								src="https://www.tgiic.telangana.gov.in:443/static/website1/img/make-telangana.jpg"/>
+						</div>
+						
+						<span class="blinking-text"
+							style="text-align: right; font-weight: bold; font-size: medium; color: red;">
+							
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="bg_nav">
+				<div class="container-fluid">
+					<div class="row  no-gutters">
+						<div class="col-md-12 col-xs-12">
+							<nav class="main-nav" role="navigation ">
+								<!-- Mobile menu toggle button (hamburger/x icon) -->
+								<input id="main-menu-state" type="checkbox" /> <label
+									class="main-menu-btn" for="main-menu-state"> <span
+									class="main-menu-btn-icon"></span> Toggle main menu visibility
+								</label>
+
+								<!-- Sample menu definition -->
+								<ul id="main-menu" class="sm sm-blue">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About us</a>
+										<ul>
+											<li><a href="showView?div_id=2">TGIIC</a></li>
+											<li><a href="showView?div_id=3">Vision and Mission</a></li>
+											<li><a href="showView?div_id=4">Organizational
+													Structure</a></li>
+											<li><a href="showView?div_id=5">Employee Bifurcation</a></li>
+										</ul></li>
+									<li><a href="#">IALA</a>
+										<ul>
+											<li><a href="showView?div_id=6">About IALA </a></li>
+											<li><a href="showView?div_id=7">List of IALAs</a></li>
+											<li><a href="showView?div_id=8">Details of TGIIC -
+													IALA ZMs Commissioners</a></li>
+											<li><a href="showView?div_id=9">IALA Guidelines</a></li>
+											<li><a href="#">Property Tax Guidelines</a>
+												<ul>
+													<li><a href="showView?div_id=10">Online Property
+															Tax Payment</a></li>
+													<li><a href="showView?div_id=11">Know Your
+															Property Tax Details</a></li>
+													<li><a href="showView?div_id=12">TGIIC IALA PTIN
+															Details</a></li>
+													<li><a href="showView?div_id=13">Self Assessment</a></li>
+													<li></li>
+												</ul></li>
+										</ul></li>
+									<li><a href="#">Policies</a>
+										<ul>
+											<li><a href="showView?div_id=14">TG-iPASS </a></li>
+											<li><a href="showView?div_id=15">Telangana
+													Industrial Policy</a></li>
+											<li><a href="showView?div_id=16">Allotment
+													Regulations 2012</a></li>
+											<li><a href="showView?div_id=17">Government Orders</a></li>
+											<li><a href="showView?div_id=18">Memorandum of
+													Understanding</a></li>
+											<li><a href="showView?div_id=19">GOs and Acts</a></li>
+										</ul></li>
+									<li><a href="#">Opportunities</a>
+										<ul>
+											<li><a href="showView?div_id=20">Industrial Park
+													Land Rates</a></li>
+											<li><a href="#">Special Economic Zones</a>
+												<ul>
+													<li><a href="showView?div_id=21">SEZs in
+															Telanagana</a></li>
+													<li><a href="showView?div_id=22">List of
+															Allotments in SEZs of TGIIC</a></li>
+												</ul></li>
+											<li><a href="showView?div_id=23">Public Private
+													Partnership (PPP) Projects</a></li>
+											<li><a href="showView?div_id=24">Industrial Clusters</a></li>
+											<li><a href="showView?div_id=25">Sectoral Thrust
+													Areas</a></li>
+										</ul></li>
+									<li><a href="#">Information to Public</a>
+										<ul>
+											<li><a href="showView?div_id=26">Final Allotment
+													Information</a></li>
+											<li><a href="#">Building Plan Permits</a>
+												<ul>
+													<li><a href="showView?div_id=27">Building Plan
+															Information</a></li>
+													<li><a href="showView?div_id=28">Building Plan
+															Inspection</a></li>
+													<li><a href="showView?div_id=29">Building Plan
+															Occupancy</a></li>
+												</ul></li>
+											<li><a href="showView?div_id=30">Citizen's Charters</a></li>
+											<li><a href="showView?div_id=31">Right to
+													Information(RTI)</a></li>
+											<li><a href="showView?div_id=32">Allotment Details</a></li>
+											<li><a href="showView?div_id=33">Environment
+													Clearance(ECs) Obtained</a></li>
+											<li><a href="showView?div_id=34">Climate Change
+													Adaptation in Industrial Areas</a></li>
+											<li><a href="showView?div_id=62">Instructions for extension of period of paying land cost</a></li>
+										</ul></li>
+
+									<li><a href="#">Information to Applicant</a>
+										<ul>
+											<li><a href="showView?div_id=35">Information on
+													Industrial Parks</a></li>
+											<li><a href="showView?div_id=36">TGIIC IALA
+													Commissioners &amp; Executing Officers</a></li>
+											<li><a href="#">Application Procedures and Checklist</a>
+												<ul>
+													<li><a href="showView?div_id=37">Land Allotment</a></li>
+													<li><a href="showView?div_id=38">Building
+															Permission</a></li>
+													<li><a href="showView?div_id=39">Water Supply
+															Connection</a></li> 
+													<li><a href="showView?div_id=40">Road Cutting /
+															ROW Permissions</a></li>
+												</ul></li>
+											<li><a href="showView?div_id=41">Framework for
+													Earmarking Land Parcels for Industrial Use</a></li>
+											<li><a href="showView?div_id=42">Category of
+													Industries</a></li>
+											<li><a href="showView?div_id=43">Objective criteria
+													for evaluation of application for land allotment and Time
+													lines for processing of an application for land allotment</a></li>
+											<li><a href="showView?div_id=44">Plantation Details
+													in TGIIC Industrial Parks</a></li>
+										</ul></li>
+									<li><a href="#">Land Availability Info</a>
+										<ul>
+											<li><a href="PMVacantPlots">Vacant Plots in IPs</a></li>
+											<li><a target="_blank"
+												href="https://www.tgiic.telangana.gov.in:443/EOTTDSReports/reFormReport">Dashboard</a></li>
+											<!-- <li><a
+												href="http://tracgis.telangana.gov.in/TIS/TISNEW/tsiic/tsiiczone/searchpage.aspx">Vacant
+													Plots Search - Sector Wise - Zone Wise</a></li> -->
+										</ul></li>
+									<li><a href="https://www.tgiic.telangana.gov.in:443/showViewTenders?id=47">Circulars</a></li>
+									<li><a href="https://www.tgiic.telangana.gov.in:443/showViewTenders?id=48">Tenders</a></li>
+									<!-- <li><a href="#">Tenders/Circulars</a></li> -->
+
+									<!-- <li><a href="#">Services</a>
+
+                  <ul>
+                    <li><a href="#">Service - 1 </a></li>
+                    <li><a href="#">Service - 2</a></li>
+                    <li><a href="#">Service - 3</a></li>
+                    <li><a href="#">Service - 4</a></li>
+                  </ul>
+                </li> -->
+
+									
+									<!-- <li><span style="color: red;padding-bottom: 5px;"><a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary text-white" style="background-color: red;border-color: red;width: 100%;height:50px;padding-top: 10px;" onclick="getMVCRandomSalt()">Login</a></span></li> -->
+									<li><a href="">View More</a>
+										<ul>
+											
+											<li><a href="showView?div_id=48">E-Auctions</a></li>
+											<!-- <li><a href="#">News Archives</a></li>
+		             					   <li><a href="#"> Events Archives </a></li>
+		               					    <li><a href="#">Photo Gallery Archives </a></li> -->
+											<li><a href="showView?div_id=49">Archives</a></li>
+											<!-- <li><a href="showView?div_id=50">Key Contacts</a></li> -->
+											<!-- <li><a href="#">RTI</a></li> -->
+											<li><a href="https://www.tgiic.telangana.gov.in:443/photoGallery">Photo Gallery</a></li>
+											<li><a href="#">What's New</a></li>
+											<li><a href="showView?div_id=52">Site Map</a></li>
+											<li><a href="https://www.tgiic.telangana.gov.in:443/contactUs">Contact us</a></li>
+											<li><a href="showView?div_id=61">Privacy Policy</a></li>
+											<li><a href="#">Terms of Use</a></li>
+											<li><a href="showView?div_id=54">FAQs</a></li>
+											<li><a href="showView?div_id=55">Downloads</a></li>
+											<li><a href="showView?div_id=53">Related Links</a></li>
+											<li><a href="#">Feedback</a></li>
+											<!--   <li><a target="_blank" href="http://45.127.101.85:9092/">Building Plan Approval - DPMS</a></li> -->
+
+											<!--<li><a target="_blank" href="https://tsiic.telangana.gov.in/relatedlinks.html">Related Links</a></li>-->
+											<li><a target="_blank"
+												href="http://onlineapps.tsiic.telangana.gov.in:8888/Grievance/">Grievance</a></li>
+											<li><a target="_blank"
+												href="http://proderp.tsiic.telangana.gov.in:8030/">ERP</a></li>
+											<li><a target="_blank"
+												href="https://www.tgiic.telangana.gov.in:443/EOTTDSReports/reFormReport">Dashboard</a></li>
+										</ul>
+									</li>
+									<li><a href="">Online Services</a>
+										<ul>
+										<li><a href="#">Building
+													Plan Approval - DPMS </a>
+												<ul>
+													<li><a href="http://tgiic.abpas.co.in/"  target="_blank">Autometry</a></li>
+													<!-- <li><a href="https://dpms.tsiic.telangana.gov.in/"  target="_blank">Soft Tech</a></li> -->
+													<li><a href="https://dpms.tsiic.telangana.gov.in/"  target="_blank">Soft Tech</a></li>
+													<li></li>
+											</ul></li>
+											<!-- <li><a target="_blank" href="http://45.127.101.85:9092/">Building
+													Plan Approval - DPMS</a></li> -->
+											<li><a target="_blank"
+												href="http://onlineapps.tsiic.telangana.gov.in:8888/SR_HMWS/">Water
+													Supply in IALAs</a></li>
+											<li><a target="_blank"
+												href="https://ts-roadcutting.cgg.gov.in/LoginEODB.do#no-back-button">Road
+													Cutting / Right of Way (ROW) Permission</a></li>
+											<li><a
+												href="https://tsialas.cgg.gov.in/tgrevenue/onlineBillpayment.do">
+													Property Tax Payment </a></li>
+											<li><a target="_blank"
+												href="http://onlineapps.tsiic.telangana.gov.in:8888/service/">Service
+													Request</a></li>
+											<li><a target="_blank"
+												href="http://tgracgis.telangana.gov.in/TIS/TISNEW/tsiic/Default.aspx">GIS</a></li>
+											<!--   <li><a href="http://onlineapps.tsiic.telangana.gov.in:8888/service/">Service Request</a></li> -->
+										</ul></li>
+										<!-- <li><a target="_blank" href="https://tsiic.telangana.gov.in/OLDTSIIC_TS/">Old Portal</a></li> -->
+								</ul>
+
+
+								<!-- <a  class="btn-login pull-right " href="#login-modal" data-target="#login-modal" data-toggle="modal" > Login </a> -->
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<div id="login" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-sm">
+					<!-- Modal content-->
+					<div class="modal-content"
+						style="border: 2px outset black; text-align: left;">
+						<div class="modal-header"
+							style="background-color: #003366; text-align: center;">
+							<h5 class="modal-title" style="text-align: center; color: white;">Login</h5>
+							<button type="button" class="close" data-dismiss="modal"
+								style="color: white;">&times;</button>
+						</div>
+						<div class="modal-body"
+							style="background-color: #f1f1f1; height: 240px;">
+							<div>
+								<form id="loginForm" onSubmit="return display();" action="./login" method="post">
+									<!-- CSRF from Spring Security TagLib -->
+									<input type="hidden" name="_csrf" value="c674f941-8cb8-40f4-94eb-641b6b5ed867" />
+									<div class="clearfix"></div>
+									<input id="username" type="text" name="username" maxlength="35"
+										size="35" placeholder="Username" autocomplete="off"
+										style="font-size: small;">
+									<br>
+									<input type="text" placeholder="Security Passcode"
+										name="origSecurityCode" maxlength="35" size="35" value=""
+										style="font-size: small;" autocomplete="off" required
+										id="origSecurityCode" ::-ms-value
+										onfocus="this.removeAttribute('readonly');"
+										onfocusout="this.setAttribute('readonly','readonly');"></input> <i class="fa fa-eye" id="togglePassword"></i>
+									<!-- <input id="password" type="password" name="password" maxlength="50" size="22" placeholder="Password" autocomplete="off"><br> -->
+									<input name="password" type="password" autocomplete="nope"
+										value="fake-pswd" style="display: none; visibility: hidden">
+									<br>
+									<table>
+										<tr>
+											<td colspan="1" align="left"><div
+													id="divGenerateRandomValues1"></div></td>
+											<td><img src="https://www.tgiic.telangana.gov.in:443/static/images/refresh1.png"
+												style="width: 40px; height: 30px;" onclick="capchaImg1()">
+											</td>
+										</tr>
+										<tr>
+											<td><input type="hidden" name="hidCapcha1"
+												Id="hidCapcha1" autocomplete="off"></td>
+										</tr>
+										<tr>
+											<td colspan="2">Enter captcha <input type="text"
+												id="txtCapcha1" name="txtCapcha1"
+												style="width: 125px; height: 10x" maxlength="5"
+												autocomplete="off"> <br>
+											</td>
+										</tr>
+									</table>
+									<br>
+									<input class="btn-danger" type="submit" value="Login"
+										style="margin-top: 10px; background-color: red; width: 225px;">
+									<br>
+									<!-- <a class="pull-right" href="FirstPage.do?status=forgot" style="color: black;" >Forgot Password?</a> -->
+								<div>
+<input type="hidden" name="_csrf" value="c674f941-8cb8-40f4-94eb-641b6b5ed867" />
+</div></form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+	</section>
+<section style="padding-top:215px;"></section>
+	<script src="https://www.tgiic.telangana.gov.in:443/static/website1/js/jquery-3.6.0.min.js"></script>
+	<script src="https://www.tgiic.telangana.gov.in:443/static/website1/js/fontsizer.js"></script>
+	<!-- <script src="js/jquery.js"></script> -->
+	<script src="https://www.tgiic.telangana.gov.in:443/static/website1/js/popper.min.js"></script>
+	<script src="https://www.tgiic.telangana.gov.in:443/static/website1/js/bootstrap.min.js"></script>
+	<script src="https://www.tgiic.telangana.gov.in:443/static/website1/js/translate.js"></script>
+	<!-- SmartMenus jQuery plugin -->
+	<script type="text/javascript"
+		src="https://www.tgiic.telangana.gov.in:443/static/website1/js/jquery.smartmenus.js"></script>
+	<script type="text/javascript"
+		src="https://www.tgiic.telangana.gov.in:443/static/website1/menu/sm-menu.js"></script>
+	<script src="https://www.tgiic.telangana.gov.in:443/static/website1/js/jquery.newsTicker.js"></script>
+	<script type="text/javascript"
+		src="https://www.tgiic.telangana.gov.in:443/static/website1/breakingnews/breaking-news-ticker.min.js"></script>
+	<script type="text/javascript">
+    jQuery(document).ready(function($){
+       $('#newsTicker1').breakingNews();
+       //$('#newsTicker2').data('breakingNews').next();
+    });
+  </script>
+	<script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                nav:true
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [100])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
+          </script>
+	<script type="text/javascript" id="pwsremover"
+		data-fieldid="origSecurityCode">
+  if (document.addEventListener) {
+    var _PWH = {
+      selected: false,
+      touched: true,
+      init: function() {
+
+        // The script must always have the id of 'pwsremover'
+        var pw = document.getElementById('pwsremover');
+
+        // You need set the 'data-fieldid' attribute on the script tag to ensure
+        // the id of your password input field is passwed in
+        var fi = pw.dataset.fieldid;
+
+        // Convert password to text type
+        var ff = document.getElementById(fi);
+        ff.type="password";
+        var h = ff.outerHTML+"";
+        ff.outerHTML = h;
+
+        // Attach event handlers
+        var passSelected = false
+        document.addEventListener("selectionchange", function(ev) {
+          var ae = ev.target.activeElement;
+          if (ae.id == "user_password") {
+            var kc = ev.keyCode;
+            var ss = ae.selectionStart;
+            var se = ae.selectionEnd;
+            var sl = Math.max(ae.selectionStart, ae.selectionEnd);
+            var il = ae.value.length;
+            _PWH.selected = (ss == 0 && se > 0 && sl == il) || ((kc == 8 || kc == 46) && il == 1);
+          }
+        });
+        var el = document.getElementById(fi);
+        el.addEventListener("keydown", function(ev) {
+          if (((ev.keyCode == 8 || ev.keyCode == 46) && this.value.length == 1) || _PWH.selected) {
+            this.value = '';
+            this.blur();
+            this.focus();
+            _PWH.selected = false;
+          }
+        });
+        el.addEventListener("mousedown",function(ev){
+            if(_PWH.touched){
+                _PWH.touched=false;
+                return;
+            }
+            this.type='password';
+        });
+        el.addEventListener("touchstart",function(ev){
+            this.type='password';
+            _PWH.touched = true;
+            this.focus(); // ensures the keyboard popsup
+        });
+        el.addEventListener("focus",function(ev){
+            this.type='password';
+        });
+      }
+    }
+    // Comment this out to disable
+   	//if($.browser.mozilla) { 
+    	_PWH.init();
+   	//}
+  }
+</script>
+
+	<script>  
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if(document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+     
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+    }
+
+       /* Flag click handler */
+          $('.translation-links a').click(function(e) {
+           
+          //   let $body = document.querySelector('body');
+          // $body.style.top = '0px';
+    e.preventDefault();
+    var lang = $(this).data('lang');
+    $('#google_translate_element select option').each(function(){
+      if($(this).text().indexOf(lang) > -1) {
+          $(this).parent().val($(this).val());
+          var container = document.getElementById('google_translate_element');
+          var select = container.getElementsByTagName('select')[0];
+          triggerHtmlEvent(select, 'change');
+      }     
+    });          
+    });
+        
+    $(document).ready(function() {
+	$(window).scroll(function() {
+	if ($(this).scrollTop() > 20) {
+	$('#toTopBtn').fadeIn();
+	} else {
+	$('#toTopBtn').fadeOut();
+	}
+	});
+	
+	$('#toTopBtn').click(function() {
+	$("html, body").animate({
+	scrollTop: 0
+	}, 1000);
+	return false;
+	});
+	});
+    
+    $(document).ready(function() {
+    	$('#togglePassword').hover(function() {
+    	    const passwordInput = $('#origSecurityCode');
+    	    passwordInput.attr('type', 'text');
+    	    togglePassword.classList.add('fa-eye-slash');
+      		togglePassword.classList.remove('fa-eye');
+    	  }, function() {
+    	    const passwordInput = $('#origSecurityCode');
+    	    passwordInput.attr('type', 'password');
+    	    togglePassword.classList.add('fa-eye');
+      		togglePassword.classList.remove('fa-eye-slash'); 
+    	  });
+
+    });
+ </script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
+	
+
+
+
+
+<html>
+<head>
+<base href="https://www.tgiic.telangana.gov.in:443/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>About US</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://www.tgiic.telangana.gov.in:443/static/AdminLTE-3.0.5/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  
+  <script type="text/javascript" src="https://www.tgiic.telangana.gov.in:443/static/js/ckeditor/ckeditor.js"></script>
+	<script src="https://www.tgiic.telangana.gov.in:443/static/js/ckeditor/sample.js" type="text/javascript"></script>
+	<link href="https://www.tgiic.telangana.gov.in:443/static/js/ckeditor/sample.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- <div class="content-wrapper"> -->
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>
+						<font style="text-decoration: underline;font-weight: bold;">Downloads</font>
+				</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#" style="color: blue;">Home</a></li>
+              <li class="breadcrumb-item active" style="color: blue;">
+						Downloads
+				</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!-- Default box -->
+            <div class="card">
+              <div class="card-body">
+              
+						<ul class="inner_cntnt" style="box-sizing: border-box; margin-top: 15px; margin-bottom: 10px; width: 1170px; padding: 0px 0px 0px 25px; color: rgb(56, 56, 56); font-family: Swiss721BT-Roman; font-size: 13px; background-color: rgb(255, 255, 255);">
+	<li style="box-sizing: border-box; width: 1145px; float: left; color: rgb(115, 115, 115); padding-left: 15px; margin-bottom: 15px;">
+		<b style="box-sizing: border-box; font-size: 17px;"><a href="https://tgiic.telangana.gov.in:443/filePreview?fileName=CMS/File_050820220452123147891281.MOU.pdf" style="box-sizing: border-box; background-color: transparent; color: rgb(9, 99, 148); text-decoration-line: none; font-size: 15px; width: 1130px; float: left;" target="_blank">Download Version</a></b></li>
+	<li style="box-sizing: border-box; width: 1145px; float: left; color: rgb(115, 115, 115); padding-left: 15px; margin-bottom: 15px;">
+		<b style="box-sizing: border-box; font-size: 17px;"><a href="https://tgiic.telangana.gov.in:443/filePreview?fileName=CMS/File_050820220452373831267469.solar-Park.pdf" style="box-sizing: border-box; background-color: transparent; color: rgb(9, 99, 148); text-decoration-line: none; font-size: 15px; width: 1130px; float: left;" target="_blank">Solar Park, Gattu Mandal &ndash; MoU</a></b></li>
+</ul>
+
+				
+				
+               
+              </div>
+              <!-- /.card-body -->
+              <!-- <div class="card-footer">
+                Footer
+              </div> -->
+              <!-- /.card-footer-->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  <!-- </div> -->
+</html>
+	
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TMREIS Footer</title>
+<head>
+	<base href="https://www.tgiic.telangana.gov.in:443/">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Telangana Minorities Residential Educational Institutions Society (TMREIS)</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+  
+  <script>
+function currentYear() {
+  var d = new Date();
+  var year = d.getFullYear();
+  document.getElementById("curYear").innerHTML = year+" &copy; Government of Telangana, All rights reserved.";   
+}
+</script>
+<style type="text/css">
+.starry-background {
+    position: relative;
+    overflow: hidden;
+    background: url('https://www.tgiic.telangana.gov.in:443/static/downloads/gif11.gif') no-repeat center center; /* Add your image URL */
+    background-size: cover; /* Ensure the image covers the footer area */
+    color: white; /* Ensure footer text is visible */
+}
+
+</style>
+</head>
+<body onload="currentYear();">
+
+ <footer class="site-footer footer  starry-background"">
+			<div class="container-fluid">
+				<div class="row align-items-start mb-3">
+					<div class="col-lg-5">
+						<div class="footer-wrap">
+							<div class="footer-logo">
+								<a href='./index.html' class='opacity-1'> <img  style="background-position: center center;background-size: cover; border-radius: 50px; border-bottom-color:black;background-repeat: no-repeat;  margin: 20px;"
+									src='https://www.tgiic.telangana.gov.in:443/static/website1/img/tsiic_logo.png'
+									alt='logo'>
+								</a>
+							</div>
+
+							<div class="footer-address">
+								<p>
+									<strong>TELANGANA INDUSTRIAL
+										INFRASTRUCTURE CORPORATION LIMITED </strong><br> 6th Floor, Parisrama
+									Bhavan, Fateh Maidan Road, Basheerbagh <br> Hyderabad -
+									500 004, Telangana, India<br> Ph: +91-40-23238290,
+									23237625.<br> Fax: +91-40-23240205, 23241385. <br>
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-lg-4">
+						<h5 class='footer-title'>Policies</h5>
+						<ul>
+							<li><a target="_blank"
+								href='static/downloads/CGG_Data_Privacy_Policy_V1.0.pdf'>Privacy
+									policy </a></li>
+							<li><a target="_blank"
+								href='static/downloads/HyperLinkingPolicy.pdf'>HyperLinking
+									policy</a></li>
+							<li><a target="_blank"
+								href='static/downloads/CopyRightPolicy.pdf'>Copyright policy</a></li>
+							<li><a target="_blank"
+								href='static/downloads/TermsandConditions.pdf'>Terms &amp;
+									Conditions</a></li>
+						</ul>
+					</div>
+					<!-- <div class="col-lg-2">
+        <h5 class='footer-title'>Quick Links</h5>
+          <ul>
+            <li><a target="_blank" href='index.html'> Home</a></li>
+            <li><a target="_blank" href='aboutus.html'>About Us</a></li>
+            <li><a target="_blank" href='faqs.html'>FAQs</a></li>
+            <li><a target="_blank" href='gos.html'>GO's and Acts</a></li>
+          </ul>
+        </div> -->
+					<div class="col-6 col-lg-3">
+						<h5 class='footer-title'>Reach Us</h5>
+						<ul>
+						<li><a target="_blank" href="https://www.tgiic.telangana.gov.in:443/contactUs"><img
+									src="https://www.tgiic.telangana.gov.in:443/static/downloads/visitors.png"
+									style="width: 30px"> Visitors Count  &nbsp;
+									<img src="https://hitwebcounter.com/counter/counter.php?page=17737122&style=0011&nbdigits=5&type=page&initCount=54681" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /> </a></li>
+						<li><a target="_blank" href="https://www.tgiic.telangana.gov.in:443/contactUs"><img
+									src="https://www.tgiic.telangana.gov.in:443/static/website1/img/contactus.PNG"
+									style="width: 30px"> Contact Us :-  <font color="white"> +91-40-23238290, 23237625</font> </a></li>
+							<li><a target="_blank" href='mail'><img
+									src="https://www.tgiic.telangana.gov.in:443/static/website1/img/flat-email-icon.png"
+									style="width: 30px"> -</a></li>
+							<li><a target="_blank" href='mail'><img
+									src="https://www.tgiic.telangana.gov.in:443/static/website1/img/phone.png"
+									style="width: 30px"> Off:- +91-40-23238290, 23237625 </a></li>
+							<li><a target="_blank" href='mail'><img
+									src="https://www.tgiic.telangana.gov.in:443/static/website1/img/Fax-icon.png"
+									style="width: 30px"> Fax:- +91-40-23240205, 23241385</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <div class="row">
+  <div class="col-md-6 text-center">  
+  </div>
+  <div class="col-md-6 text-right">
+    Visitors Count:   23545
+    <p class=""> Last updated :  02/09/2021 </p>
+  </div>
+</div> -->
+				<div class="row border-top">
+					<div class="col-md-6">
+						<p>
+							Copyright &copy;2021 TGIIC.<br> Content owned, maintained
+							and updated by TGIIC
+						</p>
+					</div>
+					<div class="col-md-6 ">
+						<div>
+							<p class="pt-2 text-white text-right">
+								Designed &amp; Developed by : <img
+									src="https://www.tgiic.telangana.gov.in:443/static/website1/img/cgg_logo.png">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+      <!-- FOOTER -->
+      <!-- <footer class="main-footer "> 
+          <div class="container ">
+            <div class="row"> 
+              <div class="col-sm-12 text-center p-3">			  
+                <div id="curYear" class="pt-2" ></div>               
+              </div>
+            </div>
+          </div> 
+      </footer> -->
+</body>
+</html>
+
+</body>
+</html>

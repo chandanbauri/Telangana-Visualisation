@@ -124,7 +124,7 @@
     "company_group":[{
         "company":[{
             "name":"TGIIC",
-            "logo":""
+            "logo":"data/images/tgiic1.png"
         }],
         "text":"100 Cr Mega Food Park in Khammam"
     }]
@@ -140,10 +140,10 @@
     "company_group":[{
         "company":[{
             "name":"Sneha Fresh Chicken",
-            "logo":""
+            "logo":"data/images/sneha-chicken.png"
         },{
             "name":"Srinivasa Farms",
-            "logo":""
+            "logo":"data/images/srinivasa.png"
         }],
         "text":"World Class Chilled Chicken Processing Plant"
     }],
@@ -252,7 +252,7 @@
     "company_group":[{
         "company":[{
             "name":"Smart Agro",
-            "logo":""
+            "logo":"data/images/agro.jpg"
         }],
         "text":"1st Private Mega Food Park Supported by MoFPI, GOI"
     }],
@@ -272,13 +272,13 @@
     "company_group":[{
         "company":[{
             "name":"Mulpuri Aqua Processors",
-            "logo":""
+            "logo":"data/images/mulpuri.webp"
         },{
             "name":"Fishin",
-            "logo":""
+            "logo":"data/images/fishin.png"
         },{
             "name":"Ananda Group",
-            "logo":""
+            "logo":"data/images/ananda.jpg"
         }],
         "text":"India's first fully Integrated Fresh Water Fish Production processing & Export based Aqua Hub in Sircills"
     }]
@@ -310,10 +310,10 @@
     "company_group":[{
         "company":[{
             "name":"Dukes",
-            "logo":""
+            "logo":"data/images/dukes.png"
         },{
             "name":"unibic",
-            "logo":""
+            "logo":"data/images/unibic.png"
         }],
         "text":"Large Scale Biscuits and Cookies Manufacturing unit"
     }]
@@ -329,19 +329,19 @@
     "company_group":[ {
         "company":[{
             "name":"Hatsun",
-            "logo":""
+            "logo":"data/images/hatsun.png"
         }],
         "text":"India's Largest Ice-Cream Manufacturing Plant for Arun Ice creams & Ibaco Brand"
     },{
         "company":[{
             "name":"Monin",
-            "logo":""
+            "logo":"data/images/monin.png"
         }],
         "text":"1st unit in India from Well Known French Flavours & Beverage Company"
     },{
         "company":[{
             "name":"Bluecraft Agro",
-            "logo":""
+            "logo":"data/images/bluecraft.png"
         }],
         "text":"One of Largest Wet Corn Milling Plants"
     }],
@@ -362,46 +362,43 @@
     "Literacy (%)": 61.61,
     "Sex ratio": 1008,
     "company_group":[{
+      "company":[{
+          "name":"SUGUNA",
+          "logo":"data/images/suguna.jpg"
+      },{
+          "name":"Mankind",
+          "logo":"data/images/mankind.png"
+      },{
+          "name":"MARS",
+          "logo":"data/images/mars.png"
+      }],
+      "text":""
+  },{
         "company":[{
-            "name":"MFEs in the District",
-            "logo":""
-        },{
             "name":"Amul",
-            "logo":""
+            "logo":"data/images/amul.png"
         },{
             "name":"Dairy Milk",
-            "logo":""
+            "logo":"data/images/dairy.jpg"
         },
         {
             "name":"TGIIC",
-            "logo":""
+            "logo":"data/images/tgiic1.png"
         }],
         "text":"Dairy Cluster at Wargal, Siddipet"
     },
     {
         "company":[{
             "name":"Freedom",
-            "logo":""
+            "logo":"data/images/freedom.png"
         }],
         "text":"One of the India's Largest Hinterland Edible Oils Refineries"
     },{
         "company":[{
             "name":"ITC",
-            "logo":""
+            "logo":"data/images/itc.png"
         }],
         "text":"One of the Largest Factories for Ashirvad, Sunfeast and other Food Brands from ITC."
-    },{
-        "company":[{
-            "name":"SUGUNA",
-            "logo":""
-        },{
-            "name":"Mankind",
-            "logo":""
-        },{
-            "name":"MARS",
-            "logo":""
-        }],
-        "text":""
     }],
     "food_processing_data":[{
         "zone_name":"TSFPZ Wargal",
@@ -460,16 +457,13 @@
     "company_group":[{
         "company":[{
             "name":"plant lipids",
-            "logo":""
+            "logo":"data/images/plant.png"
         },{
             "name":"godrej",
-            "logo":""
-        },{
-            "name":"agrovet",
-            "logo":""
+            "logo":"data/images/godrej-agrovet-limited-logo-1.png"
         },{
             "name":"vidya herbs",
-            "logo":""
+            "logo":"data/images/vidya.jpg"
         }],
         "text":"One of the Largest Exports Oriented Oleoresin and Chilli Processing Plant"
     }]
@@ -498,23 +492,23 @@
     "company_group":[{
         "company":[{
             "name":"Wow momo",
-            "logo":""
+            "logo":"data/images/momo.webp"
         },{
             "name":"Coca Cola",
-            "logo":""
+            "logo":"data/images/coca-cola-2021.svg"
         },
         {
             "name":"Almond House",
-            "logo":""
+            "logo":"data/images/almond.png"
         },{
            "name":"Bikanervala",
-            "logo":"" 
+            "logo":"data/images/Bikanervala_Logo.png" 
         },{
             "name":"3F Industries Ltd",
-            "logo":"" 
+            "logo":"data/images/3f.jpg" 
         },{
             "name":"TGIIC",
-            "logo":"" 
+            "logo":"data/images/tgiic1.png" 
         }],
         "text":"150 Acre Food Processing Industrial Park"
     }]

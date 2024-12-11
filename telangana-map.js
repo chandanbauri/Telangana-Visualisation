@@ -91,20 +91,20 @@ $(document).ready(function () {
 
                 for (const company of company_group?.company) {
                   company_row += `
-<div class="col-md-3">
+<div class="col-md-4">
             <img
               class="img-size"
-              src="./data/images/02_TG Map with Logos 4.png${company?.logo}"
+              src="${company?.logo}"
             />
 </div>
 `;
                 }
 
                 rows += `<div class="row align-items-center" >
-          <div class="col-md-5 row thrid_bracket" style="min-height: 10rem;">
+          <div class="col-md-6 row thrid_bracket" style="min-height: 10rem;">
               ${company_row}
           </div>
-          <div class="col-md-7" style="padding-left: 4rem; display: flex; align-items: center; min-height: 10rem;">
+          <div class="col-md-6" style="padding-left: 4rem; display: flex; align-items: center; min-height: 10rem;">
             <p>${company_group?.text}</p>
           </div>
         </div>`;
