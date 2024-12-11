@@ -76,36 +76,26 @@ $(document).ready(function () {
           function renderCompanies() {
             const company_groups = getData(
               feature.properties.D_NAME,
-              "company_group",
+              "food_processing_data",
             );
             const row_container = document.getElementById("rows_container");
 
             try {
               let rows = "";
 
-              for (let company_group of company_groups) {
-                let company_row = "";
-
-                for (const company of company_group?.company) {
-                  company_row += `
-<div class="col-md-3">
-            <img
-              class="img-size"
-              src="./data/images/02_TG Map with Logos 4.png${company?.logo}"
-            />
-</div>
-`;
-                }
-
-                rows += `<div class="row align-items-center" >
-          <div class="col-md-5 row thrid_bracket" style="min-height: 10rem;">
-              ${company_row}
-          </div>
-          <div class="col-md-6" style="padding-left: 4rem; display: flex; align-items: center; min-height: 10rem;">
-            <p>${company_group?.text}</p>
-          </div>
-        </div>`;
+              for (const group of company_groups) {
+                rows += `
+                    <div class="group-card col-md-3">
+                      <h6>${group.zone_name}</h6>
+                      <h5>${feature.properties.D_NAME}</h5>
+                      <div>
+                           <img />
+                      </div>
+                      <span>${group.acres}</span>
+                    </div>
+                `;
               }
+
               row_container.innerHTML = rows;
             } catch (error) {
               row_container.innerHTML = "";
