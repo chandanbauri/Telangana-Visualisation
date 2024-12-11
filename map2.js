@@ -85,7 +85,8 @@ $(document).ready(function () {
 
               for (const group of company_groups) {
                 rows += `
-                    <div class="group-card col-md-3">
+                  <div class="col-md-3" style="padding-left: 0px;">
+                    <div class="group-card">
                       <h6>${group.zone_name}</h6>
                       <h5>${feature.properties.D_NAME}</h5>
                       <div>
@@ -93,10 +94,17 @@ $(document).ready(function () {
                       </div>
                       <span>${group.acres}</span>
                     </div>
+                  </div>
                 `;
               }
+              let container = `<div class="col-md-12" style="flex-shrink: 0;">
+                                  <h1 class="district-title">${feature.properties.D_NAME} District</h1>
+                               </div>
+                               <div class="row col-md-12">
+                                  ${rows}
+                               </div>`;
 
-              row_container.innerHTML = rows;
+              row_container.innerHTML = container;
             } catch (error) {
               row_container.innerHTML = "";
             }
@@ -107,9 +115,8 @@ $(document).ready(function () {
             });
             var tipText = feature.properties.D_NAME;
             this.bindTooltip(tipText).openTooltip();
+            renderCompanies();
           });
-
-          layer.on("click", renderCompanies);
           layer.on("mouseout", function () {
             this.setStyle({
               fillColor: DEFAULT_MAP_SEGMENT_COLOR,

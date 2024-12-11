@@ -80,24 +80,31 @@ $(document).ready(function () {
               "food_processing_data",
             );
             const row_container = document.getElementById("rows_container");
-
             try {
               let rows = "";
 
               for (const group of company_groups) {
                 rows += `
-                      <div class="group-card col-md-3">
-                        <h6>${group.zone_name}</h6>
-                        <h5>${feature.properties.D_NAME}</h5>
-                        <div>
-                             <img />
-                        </div>
-                        <span>${group.acres}</span>
+                  <div class="col-md-3" style="padding-left: 0px;">
+                    <div class="group-card">
+                      <h6>${group.zone_name}</h6>
+                      <h5>${feature.properties.D_NAME}</h5>
+                      <div>
+                           <img />
                       </div>
-                  `;
+                      <span>${group.acres}</span>
+                    </div>
+                  </div>
+                `;
               }
+              let container = `<div class="col-md-12" style="flex-shrink: 0;">
+                                  <h1 class="district-title">${feature.properties.D_NAME} District</h1>
+                               </div>
+                               <div class="row col-md-12">
+                                  ${rows}
+                               </div>`;
 
-              row_container.innerHTML = rows;
+              row_container.innerHTML = container;
             } catch (error) {
               row_container.innerHTML = "";
             }

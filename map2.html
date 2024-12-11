@@ -41,17 +41,27 @@
       max-width: 400px;
     }
     .group-card {
-      --dimension: 150px;
-      height: var(--dimension);
-      width: var(--dimension);
-      background-color: #074C39;
+      min-width: 150px;
+      aspect-ratio: 1/1;
+      background-color: #074c39;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-right: 1rem;
       color: white;
       text-align: center;
+      padding-inline: 1rem;
+      position: relative;
+      border-radius: 0.75rem;
+    }
+    .group-card::after {
+      content: "";
+      background-image: url("./data/images/card-ornament.svg");
+      height: 4rem;
+      aspect-ratio: 1/1;
+      position: absolute;
+      top: -1rem;
+      right: -0.8rem;
     }
 
     #rows_container {
@@ -60,13 +70,42 @@
       align-items: center;
       height: 400px;
     }
+    #rows_container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 400px;
+    }
+
+    .district-title {
+      color: #0a150f;
+      font-size: 24px;
+      margin-bottom: 1em;
+    }
   </style>
   <body>
-    <div class="row" style="max-width: 100%">
-      <div class="col-md-4">
+    <div
+      class="row align-items-center justify-content-center"
+      style="max-width: 100%"
+    >
+      <div
+        class="col-md-5"
+        style="display: flex; align-items: center; justify-content: center"
+      >
         <div id="mapid"></div>
       </div>
-      <div class="col-md-7" id="rows_container"></div>
+      <div class="col-md-7">
+        <div
+          id="rows_container"
+          class=""
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        ></div>
+      </div>
     </div>
     <script src="map2.js"></script>
   </body>
