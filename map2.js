@@ -90,7 +90,13 @@ $(document).ready(function () {
                       <h6>${group.zone_name}</h6>
                       <h5>${feature.properties.D_NAME}</h5>
                       <div>
-                           <img />
+                           <img 
+                              src="./data/images/location.png"
+                              style="
+                                  height: 3rem;
+                                  aspect-ratio: 1/1;
+                                  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(172deg) brightness(107%) contrast(103%);
+                              " />
                       </div>
                       <span>${group.acres}</span>
                     </div>
