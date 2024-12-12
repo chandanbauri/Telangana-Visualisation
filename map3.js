@@ -62,10 +62,10 @@ $(document).ready(function () {
     function style(feature) {
       return {
         fillColor: DEFAULT_MAP_SEGMENT_COLOR,
-        weight: 2,
+        weight: 1,
         opacity: 1,
-        color: "#FFFFFF",
-        dashArray: "3",
+        color: "#A9E6FF",
+        dashArray: "0",
         fillOpacity: 1,
         className: "geojson-shadow",
       };
@@ -85,14 +85,14 @@ $(document).ready(function () {
 
               for (const group of company_groups) {
                 rows += `
-                  <div class="col-md-3" style="padding-left: 0px;">
+                  <div class="col-md-4" style="padding-left: 0px;">
                     <div class="group-card">
-                      <h6>${group.zone_name}</h6>
-                      <h5>${feature.properties.D_NAME}</h5>
+                      <h6 class="zone">${group.zone_name}</h6>
+                      <h5 class="dist">${feature.properties.D_NAME}</h5>
                       <div>
                            <img />
                       </div>
-                      <span>${group.acres}</span>
+                      <span class="acre">${group.acres}</span>
                     </div>
                   </div>
                 `;
@@ -100,7 +100,7 @@ $(document).ready(function () {
               let container = `<div class="col-md-12" style="flex-shrink: 0;">
                                   <h1 class="district-title">${feature.properties.D_NAME} District</h1>
                                </div>
-                               <div class="row col-md-12">
+                               <div class="row " style="width:100%;">
                                   ${rows}
                                </div>`;
 

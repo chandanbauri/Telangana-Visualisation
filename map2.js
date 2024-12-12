@@ -62,10 +62,10 @@ $(document).ready(function () {
     function style(feature) {
       return {
         fillColor: DEFAULT_MAP_SEGMENT_COLOR,
-        weight: 2,
+        weight: 0.5,
         opacity: 1,
         color: "#FFFFFF",
-        dashArray: "3",
+        dashArray: "0",
         fillOpacity: 1,
       };
     }
@@ -85,10 +85,10 @@ $(document).ready(function () {
 
               for (const group of company_groups) {
                 rows += `
-                  <div class="col-md-3" style="padding-left: 0px;">
+                  <div class="col-md-4" style="padding-left: 0px;">
                     <div class="group-card">
-                      <h6>${group.zone_name}</h6>
-                      <h5>${feature.properties.D_NAME}</h5>
+                      <h6 class="zone">${group.zone_name}</h6>
+                      <h5 class="dist">${feature.properties.D_NAME}</h5>
                       <div>
                            <img 
                               src="./data/images/location.png"
@@ -98,7 +98,7 @@ $(document).ready(function () {
                                   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(172deg) brightness(107%) contrast(103%);
                               " />
                       </div>
-                      <span>${group.acres}</span>
+                      <span class="acre">${group.acres}</span>
                     </div>
                   </div>
                 `;
@@ -106,7 +106,7 @@ $(document).ready(function () {
               let container = `<div class="col-md-12" style="flex-shrink: 0;">
                                   <h1 class="district-title">${feature.properties.D_NAME} District</h1>
                                </div>
-                               <div class="row col-md-12">
+                               <div class="row " style="width:100%;">
                                   ${rows}
                                </div>`;
 

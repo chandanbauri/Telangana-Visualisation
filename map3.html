@@ -41,18 +41,19 @@
       max-width: 400px;
     }
     .group-card {
-      min-height: 150px;
-      aspect-ratio: 1/1;
+      min-width: 150px;
+      aspect-ratio: 1.1/1;
       background-color: #074c39;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-right: 1rem;
       color: white;
       text-align: center;
+      padding-inline: 2rem;
       position: relative;
       border-radius: 0.75rem;
+      box-sizing: border-box;
     }
     .group-card::after {
       content: "";
@@ -70,16 +71,30 @@
       align-items: center;
       height: 400px;
     }
+    #rows_container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 400px;
+    }
 
     .district-title {
       color: #0a150f;
       font-size: 24px;
-      margin-bottom: 1em;
+     
+      display: none;
     }
-
-    .geojson-shadow {
-      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
-      /* Shadow for the geojson layer */
+    .zone{
+      font-size: 15px;
+      
+    }
+    .acre{
+font-weight: bold;
+font-size: 16px;
+    }
+    .dist{
+font-weight: bold;
+font-size: 18px;
     }
   </style>
   <body>
